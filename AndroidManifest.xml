@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.zv.activlog"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+    <uses-sdk android:minSdkVersion="8" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>     
+    
+    <application
+        android:name="ActivityLoggerApplication" 
+        android:debuggable="false"
+        android:icon="@drawable/launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    	<activity 
+    	    android:name=".PreferencesActivity" />
+    	<activity 
+    	    android:name="DbAdminActivity"
+            android:label="@string/dbadmin_title" />
+    		<activity 
+    	    android:name="ListActivity"
+            android:label="@string/app_name" />
+    	<activity 
+    	    android:name="AboutActivity"
+            android:label="@string/about_name" />
+   		<activity
+            android:name="LoggingActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="StatisticsActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="StatsTableActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="ActivitiesActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity 
+            android:name="org.achartengine.GraphicalActivity"
+            android:theme="@android:style/Theme.NoTitleBar" />
+	</application>
+</manifest>

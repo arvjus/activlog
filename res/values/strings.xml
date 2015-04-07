@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Activity Logger</string>
+    <string name="about_name">About Activity Logger</string>
+    
+    <string name="menu_prefs_item">Preferences</string>
+    <string name="menu_dbadmin_item">Database</string>
+    <string name="menu_about_item">About</string>
+    
+    <string-array name="date_formats">
+        <item name="yyyymmdd">yyyyy-mm-dd</item>
+        <item name="mmddyyyy">mm/dd/yyyy</item>
+        <item name="ddmmyyyy">dd/mm/yyyy</item>
+    </string-array>
+    <string-array name="date_format_values">
+        <item name="yyyymmdd">yyyymmdd</item>
+        <item name="mmddyyyy">mmddyyyy</item>
+        <item name="ddmmyyyy">ddmmyyyy</item>
+    </string-array>
+    
+    <string-array name="measurement_units">
+        <item name="km">Kilometers</item>
+        <item name="mi">Miles</item>
+    </string-array>
+    <string-array name="measurement_unit_values">
+        <item name="km">Km</item>
+        <item name="mi">Mi</item>
+    </string-array>
+    
+    <string-array name="type_spinner_entries">
+	   	<item>&lt; Select Type &gt;</item>
+	   	<item>Distance</item>
+	   	<item>Duration</item>
+	   	<item>Rating</item>
+	   	<item>Numeric</item>
+	   	<item>Text</item>
+	</string-array>
+    
+    <string name="dbadmin_title">Database Administration</string>
+    <string name="dbadmin_backup_dir_textView">Directory</string>
+    <string name="dbadmin_backup_file_textView">File</string>
+	<string name="dbadmin_restore_button">Restore</string>
+	<string name="dbadmin_reset_button">Reset</string>
+	<string name="dbadmin_timestamp_checkBox">Use timestamp in filename</string>
+	<string name="dbadmin_backup_button">Backup</string>
+    
+    <string name="logging_activity_textView">Activity</string>
+    <string name="logging_date_textView">Date</string>
+    <string name="logging_log_button">Log this activity event</string>
+
+    <string name="statistics_date_from_textView">From</string>
+    <string name="statistics_date_to_textView">To</string>
+    <string name="statistics_acivity_textView">Activity</string>
+    <string name="statistics_attribute_textView">Attribute</string>
+	<string name="statistics_table_button">Display Table</string>
+	<string name="statistics_chart_button">Display Chart</string>
+
+	<string name="activities_activity_textView">Activity</string>
+	<string name="activities_activity_name_textView">Name</string>
+	<string name="activities_activity_invisible_checkBox">Invisible</string>
+	<string name="activities_activity_save_button">Save</string>
+	<string name="activities_activity_delete_button">Delete</string>
+	<string name="activities_attribute_textView">Attribute</string>
+	<string name="activities_attribute_name_textView">Name</string>
+	<string name="activities_attribute_type_textView">Type</string>
+	<string name="activities_attribute_default_textView">Default</string>
+	<string name="activities_attribute_invisible_checkBox">Invisible</string>
+	<string name="activities_attribute_save_button">Save</string>
+	<string name="activities_attribute_delete_button">Delete</string>
+			
+</resources>

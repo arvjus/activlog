@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/statistics_activities_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List activitiew" />
+
+    <Button
+        android:id="@+id/statistics_plain_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="List plain logs" />
+
+    <Button
+        android:id="@+id/statistics_group_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lsit group logs" />
+
+    <ListView
+        android:id="@+id/statistics_listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

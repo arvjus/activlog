@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item 
+		android:id="@+id/main_menu_prefs_item"
+		android:icon="@drawable/prefs" 
+		android:title="@string/menu_prefs_item">
+	</item>
+	<item 
+		android:id="@+id/main_menu_dbadmin_item"
+		android:icon="@drawable/dbadmin" 
+		android:title="@string/menu_dbadmin_item">
+	</item>
+	<item 
+		android:id="@+id/main_menu_about_item"
+		android:icon="@drawable/about" 
+		android:title="@string/menu_about_item">
+	</item>
+</menu>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="preferences_screen"
+    android:summary="Set user preferences"
+    android:title="Activity Logger Preferences" >
+
+	<ListPreference 
+	    android:key="date_format"
+	    android:title="Date Format"
+	    android:summary="Select preferred date format"
+	    android:defaultValue="yyyymmdd" 
+	    android:entries="@array/date_formats"
+	    android:entryValues="@array/date_format_values" />
+	<ListPreference 
+	    android:key="measurement_units"
+	    android:title="Measurement Units"
+	    android:summary="Select distance measurement units"
+	    android:defaultValue="Km" 
+	    android:entries="@array/measurement_units"
+	    android:entryValues="@array/measurement_unit_values" />    
+</PreferenceScreen>

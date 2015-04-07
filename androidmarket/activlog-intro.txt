@@ -1,0 +1,24 @@
+Activity Logger
+
+Want to track your day-to-day routines, sport activities? Activity Logger is an application that allows you to keep track on activities you perform on a regular basis. But it is not limited to, you can record and track anything you want.
+It helps you understand how regularly you perform repeating activities, provides statistical information on duration, rating or anything else you choose to log.
+
+With application you will be able to:
+
+- Log activity events by using predefined activity template. (e.g. Jogging; distance: 5km, duration: 30min)
+- Display statistics for a given period of time
+- Define your own activity templates with custom-defined attributes
+
+More information is available after installing application on your android phone. It is located on Information window, accessible via application menu.
+
+
+
+Change log
+
+1.1 ver
+-------
+
+- Added database administration. This allows application data to backup to / restore from external disk storage  
+- Minor improvements in GUI
+- Fixes in database schema - delete on cascade works now, while deleting activity record. 
+  Note if you have installed 1.0 ver, this release will not migrate current database due to limitation in SQLite and the database will be reset.     

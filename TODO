@@ -1,0 +1,8 @@
+ver 1.1
+
++ reset views in statistics if no activity is left/selected
++ cascade delete does not work
++ database is closed in activities after restore
++ allow statistics with no attribute selected
+
++ backup/restore window

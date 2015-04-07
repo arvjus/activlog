@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/list_item2_layout"
+	android:orientation="horizontal"  
+	android:layout_height="wrap_content"
+	android:layout_width="fill_parent"
+	android:paddingLeft="8dip" 
+	android:paddingRight="8dip"
+	style="@style/innerText" >
+
+	<TextView android:id="@+id/stats_table_item_value1_textView"
+		android:gravity="left"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content" 
+		android:paddingTop="5dip"
+		android:paddingBottom="5dip" 
+		style="@style/innerTextBold" />
+	<TextView android:id="@+id/stats_table_item_value2_textView"
+		android:gravity="right" 
+		android:layout_height="wrap_content" 
+		android:layout_width="fill_parent" 
+		android:paddingTop="5dip"
+		android:paddingBottom="5dip" 
+		style="@style/innerText" />
+</LinearLayout>

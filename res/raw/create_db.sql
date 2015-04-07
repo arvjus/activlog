@@ -1,0 +1,16 @@
+CREATE TABLE profiles (profile_id INTEGER PRIMARY KEY, name TEXT);
+CREATE TABLE activities (activity_id INTEGER PRIMARY KEY, profile_id INTEGER DEFAULT 0, name TEXT, enabled BOOLEAN, FOREIGN KEY (profile_id) REFERENCES profiles (profile_id) ON DELETE CASCADE);
+CREATE TABLE activity_attributes (activity_attribute_id INTEGER PRIMARY KEY, activity_id INTEGER, type INTEGER, name TEXT, default_value TEXT, enabled BOOLEAN, FOREIGN KEY (activity_id) REFERENCES activities (activity_id) ON DELETE CASCADE);
+CREATE TABLE activity_logs (activity_log_id INTEGER PRIMARY KEY, activity_id INTEGER, create_date TEXT, FOREIGN KEY (activity_id) REFERENCES activities (activity_id) ON DELETE CASCADE);
+CREATE TABLE activity_attribute_logs (activity_attribute_log_id INTEGER PRIMARY KEY, activity_log_id INTEGER, activity_attribute_id INTEGER, value TEXT, FOREIGN KEY (activity_log_id) REFERENCES activity_logs (activity_log_id)  ON DELETE CASCADE, FOREIGN KEY (activity_attribute_id) REFERENCES activity_attributes (activity_attribute_id) ON DELETE CASCADE);
+INSERT INTO  profiles (profile_id, name) VALUES (0, "Default");
+INSERT INTO  activities (activity_id, profile_id, name, enabled) VALUES (1, 0, "Jogging", 1);
+INSERT INTO  activity_attributes (activity_attribute_id, activity_id, type, name, default_value, enabled) VALUES (1, 1, 1, 'Distance', '5', 1);
+INSERT INTO  activity_attributes (activity_attribute_id, activity_id, type, name, default_value, enabled) VALUES (2, 1, 2, 'Duration (min)', '30', 1);
+INSERT INTO  activity_attributes (activity_attribute_id, activity_id, type, name, default_value, enabled) VALUES (3, 1, 3, 'Rating', null, 1);
+INSERT INTO  activity_attributes (activity_attribute_id, activity_id, type, name, default_value, enabled) VALUES (4, 1, 5, 'Not visible', 'a value', 0);
+INSERT INTO  activities (activity_id, profile_id, name, enabled) VALUES (2, 0, "Cycling", 1);
+INSERT INTO  activity_attributes (activity_attribute_id, activity_id, type, name, default_value, enabled) VALUES (5, 2, 1, 'Distance', '20', 1);
+INSERT INTO  activity_attributes (activity_attribute_id, activity_id, type, name, default_value, enabled) VALUES (6, 2, 2, 'Duration (min)', '60', 1);
+INSERT INTO  activity_attributes (activity_attribute_id, activity_id, type, name, default_value, enabled) VALUES (7, 2, 3, 'Rating', null, 1);
+INSERT INTO  activity_attributes (activity_attribute_id, activity_id, type, name, default_value, enabled) VALUES (8, 2, 3, 'Weather', null, 1);
