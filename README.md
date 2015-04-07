@@ -38,7 +38,7 @@ In additional to basic functionality, commercial version of application adds:
 * Export/import/maintain collected data.
 
 
-### Database schema
+### Database schema (SQLite)
 
 Table categories
 
