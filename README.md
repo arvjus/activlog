@@ -13,14 +13,14 @@ Copyright © 2012 Arvid Juskaitis <arvydas.juskaitis@gmail.com>
 
 Click to view.
 
-[![Logging](https://raw.githubusercontent.com/arvjus/fintrack/master/screenshots/list-expenses-thumb.png)](https://raw.githubusercontent.com/arvjus/fintrack/master/screenshots/list-expenses.png)
+[![Logging](https://raw.githubusercontent.com/arvjus/activlog/master/androidmarket/1-thumb.png)](https://raw.githubusercontent.com/arvjus/activlog/master/androidmarket/1.png)
 
-[![Statistics](https://raw.githubusercontent.com/arvjus/fintrack/master/screenshots/summary-thumb.png)](https://raw.githubusercontent.com/arvjus/fintrack/master/screenshots/summary.png)
+[![Statistics](https://raw.githubusercontent.com/arvjus/activlog/master/androidmarket/2-thumb.png)](https://raw.githubusercontent.com/arvjus/activlog/master/androidmarket/2.png)
 
-[![Activities](https://raw.githubusercontent.com/arvjus/fintrack/master/screenshots/add-income-thumb.png)](https://raw.githubusercontent.com/arvjus/fintrack/master/screenshots/add-income.png)
+[![Activities](https://raw.githubusercontent.com/arvjus/activlog/master/androidmarket/3-thumb.png)](https://raw.githubusercontent.com/arvjus/activlog/master/androidmarket/3.png)
 
 
-## Intro
+### Intro
 
 Activity Logger is an application for logging sport activity. There are two version of application
 * Activity Logger Lite - free version of application with limited functionality.
@@ -42,41 +42,52 @@ In additional to basic functionality, commercial version of application adds:
 * Export/import/maintain collected data.
 
 
-## Database schema
+### Database schema
 
-### Table categories
+Table categories
 
-category_id				int
-name					text
+Column name|type
+---|---
+category_id|int
+name|text
 
-### Table activities
 
-activity_id				int
-category_id				int
-name					text
-enabled					boolean
+Table activities
 
-### Table activity_attributes
+Column name|type
+---|---
+activity_id				|int
+category_id				|int
+name					|text
+enabled					|boolean
 
-activity_attribute_id	int
-activity_id				int
-type					int		/* DISTANCE, DURATION, TIMES, CUSTOM */
-name					text
-default_value			text
-enabled					boolean
+Table activity_attributes
 
-### Table activity_logs
+Column name|type
+---|---
+activity_attribute_id	|int
+activity_id				|int
+type					|int		/* DISTANCE, DURATION, TIMES, CUSTOM */
+name					|text
+default_value			|text
+enabled					|boolean
 
-activity_log_id			int
-activity_id				int
-create_date				text
+Table activity_logs
 
-### Table activity_attribute_logs
+Column name|type
+---|---
+activity_log_id			|int
+activity_id				|int
+create_date				|text
 
-activity_attribute_log_id	int
-activity_log_id				int
-activity_attribute_id		int
-activity_id					int
-value						text
 
+Table activity_attribute_logs
+
+Column name|type
+---|---
+activity_attribute_log_id	|int
+activity_log_id				|int
+activity_attribute_id		|int
+activity_id					|int
+value						|text
 
