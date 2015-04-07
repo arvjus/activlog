@@ -13,11 +13,7 @@ Copyright © 2012 Arvid Juskaitis <arvydas.juskaitis@gmail.com>
 
 Click to view.
 
-[![Logging](https://raw.githubusercontent.com/arvjus/activlog/master/androidmarket/1-thumb.png)](https://raw.githubusercontent.com/arvjus/activlog/master/androidmarket/1.png)
-
-[![Statistics](https://raw.githubusercontent.com/arvjus/activlog/master/androidmarket/2-thumb.png)](https://raw.githubusercontent.com/arvjus/activlog/master/androidmarket/2.png)
-
-[![Activities](https://raw.githubusercontent.com/arvjus/activlog/master/androidmarket/3-thumb.png)](https://raw.githubusercontent.com/arvjus/activlog/master/androidmarket/3.png)
+[![Logging](https://raw.githubusercontent.com/arvjus/activlog/master/androidmarket/1-thumb.png)](https://raw.githubusercontent.com/arvjus/activlog/master/androidmarket/1.png)  [![Statistics](https://raw.githubusercontent.com/arvjus/activlog/master/androidmarket/2-thumb.png)](https://raw.githubusercontent.com/arvjus/activlog/master/androidmarket/2.png)  [![Activities](https://raw.githubusercontent.com/arvjus/activlog/master/androidmarket/3-thumb.png)](https://raw.githubusercontent.com/arvjus/activlog/master/androidmarket/3.png)
 
 
 ### Intro
@@ -42,7 +38,7 @@ In additional to basic functionality, commercial version of application adds:
 * Export/import/maintain collected data.
 
 
-### Database schema
+### Database schema (SQLite)
 
 Table categories
 
@@ -61,6 +57,7 @@ category_id				|int
 name					|text
 enabled					|boolean
 
+
 Table activity_attributes
 
 Column name|type
@@ -71,6 +68,7 @@ type					|int		/* DISTANCE, DURATION, TIMES, CUSTOM */
 name					|text
 default_value			|text
 enabled					|boolean
+
 
 Table activity_logs
 
@@ -90,4 +88,3 @@ activity_log_id				|int
 activity_attribute_id		|int
 activity_id					|int
 value						|text
-
