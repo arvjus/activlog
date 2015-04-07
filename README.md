@@ -1,5 +1,5 @@
 ## ActivLog
-Activity Logger is an Android application for logging sport activity. ![icon](https://raw.githubusercontent.com/arvjus/activlog/master/androidmarket/icon.png)
+Activity Logger is an Android application for logging sport activity. ![icon](https://raw.githubusercontent.com/arvjus/activlog/master/androidmarket/small-icon.png)
 
 
 ### License
